@@ -39,3 +39,19 @@ const button = document.querySelector('button');
 button.onclick = function() {
     setUserName();
 }
+
+function getFirstNumber() {
+    let num1 = prompt('Enter first number');
+    if(!num1 || num1 === null) {
+        getFirstNumber();
+    } else {
+        localStorage.setItem('1stNumber', num1);
+}
+
+function getSecondNumber() {
+    let num2 = prompt('Enter second number');
+    if(!num2 || num2 === null) {
+        getSecondNumber();
+    } else {
+        localStorage.setItem('2ndNumber', num2);
+}
